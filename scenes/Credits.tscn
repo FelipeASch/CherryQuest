@@ -1,0 +1,91 @@
+[gd_scene load_steps=5 format=3 uid="uid://brfe8t66deunu"]
+
+[ext_resource type="Texture2D" uid="uid://b325g1g4q877y" path="res://Pink.png" id="1_7cyj8"]
+[ext_resource type="Script" path="res://scenes/Credits.gd" id="1_a2pth"]
+[ext_resource type="Texture2D" uid="uid://bq4yql30cy8po" path="res://Credits.png" id="2_tn54v"]
+[ext_resource type="FontFile" uid="uid://gyc06tsa5te3" path="res://Runtoe.ttf" id="3_g5e3w"]
+
+[node name="Credits" type="Node"]
+script = ExtResource("1_a2pth")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_7cyj8")
+stretch_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -149.0
+offset_top = -275.0
+offset_right = 145.0
+offset_bottom = -200.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_tn54v")
+
+[node name="TextEdit" type="TextEdit" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -253.5
+offset_top = -119.0
+offset_right = 253.5
+offset_bottom = 119.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_g5e3w")
+text = "Developed by: Felipe Alencar Schneider
+Tutorial Videos for this project: Coco Code
+Assets: Pixel Adventure 1 / Pixel Adventure 2 by Pixel Frog
+Font: Runtoe by Khurasan
+
+All used items are free to use.
+
+First project on Godot and first game ever made 
+having lots of fun, looking forward to learn more about
+creating games :)"
+
+[node name="Back" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -62.0
+offset_top = 161.0
+offset_right = 43.0
+offset_bottom = 213.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_g5e3w")
+theme_override_font_sizes/font_size = 40
+text = "Back"
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -162.0
+offset_top = -188.0
+offset_right = 160.0
+offset_bottom = -116.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_g5e3w")
+theme_override_font_sizes/font_size = 30
+text = "THANKS FOR PLAYING :)"
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
