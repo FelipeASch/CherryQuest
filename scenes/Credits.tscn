@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://brfe8t66deunu"]
 
-[ext_resource type="Texture2D" uid="uid://b325g1g4q877y" path="res://Pink.png" id="1_7cyj8"]
+[ext_resource type="Texture2D" uid="uid://b325g1g4q877y" path="res://Assets/background/Pink.png" id="1_7cyj8"]
 [ext_resource type="Script" path="res://scenes/Credits.gd" id="1_a2pth"]
-[ext_resource type="Texture2D" uid="uid://bq4yql30cy8po" path="res://Credits.png" id="2_tn54v"]
-[ext_resource type="FontFile" uid="uid://gyc06tsa5te3" path="res://Runtoe.ttf" id="3_g5e3w"]
+[ext_resource type="Texture2D" uid="uid://bq4yql30cy8po" path="res://Assets/text-images/Credits.png" id="2_tn54v"]
+[ext_resource type="FontFile" uid="uid://gyc06tsa5te3" path="res://Assets/font/Runtoe.ttf" id="3_g5e3w"]
 
 [node name="Credits" type="Node"]
 script = ExtResource("1_a2pth")
